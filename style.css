@@ -1,0 +1,43 @@
+body{
+    margin: 20px 40px !important;
+}
+
+input{
+    border: none;
+}
+
+#blogs{
+    display: none;
+}
+
+.question-container div{
+    margin:0 auto ;
+    margin-top:50px;
+    border: 2px solid rgba(0,0,0,0.15);
+    width: 550px;
+    border-radius: 5px;
+}
+
+.question-container div h2,.question-container div p{
+    padding: 10px 20px;
+
+}
+
+.question-container div:hover h2{
+    background-color: rgba(0,0,0,0.75);
+    color: white;
+}
+
+@media screen and (max-width:688px){
+    body{
+        margin: 10px 0px !important;
+    }
+    .question-container div{
+        width: 300px;
+    }
+
+    .question-container div h2{
+        background-color: rgba(0,0,0,0.75);
+        color: white;
+    }
+}
