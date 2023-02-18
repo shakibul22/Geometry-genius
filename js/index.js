@@ -57,26 +57,28 @@ document.getElementById('triangle-btn').addEventListener('click', () => {
     const area = 0.5 * sd.firstInputValue * sd.secondInputValue;
     displayData(sd.shapeName, area)
 
+
 })
+
 
 function displayData(nameOfShape, area) {
     const container = document.getElementById("area");
     const tr = document.createElement("tr");
     tr.innerHTML = `
-      <td>${serial}</td>
-      <td>${nameOfShape}</td>
-      <td>${area} cm<sup>2</sup></td>
-      
-      <td>
-      <button class="btn btn-sm bg-orange-700 ">X</button>
-      </td>
-      
+    <td>${serial}</td>
+    <td>${nameOfShape}</td>
+    <td>${area} cm<sup>2</sup></td>
+    
+    <td>
+    <button class="btn btn-sm bg-orange-700 ">X</button>
+    </td>
+    
     `;
     container.appendChild(tr);
 }
 
 function getData(id1, id2, id3) {
-
+    
     const shapeName = document.getElementById(id1).innerText;
     const firstInputValue = document.getElementById(id2).value;
     const secondInputValue = document.getElementById(id3).value;
@@ -91,4 +93,30 @@ function getData(id1, id2, id3) {
     return sd;
 }
 
+//hover functions
+
+document.getElementById('triangle').addEventListener('mouseenter', () => {
+    var color = '#'+Math.floor(Math.random()*16777215).toString(16);
+    var colorString = '0px 0px 10px 0px ' + color;
+    document.getElementById('triangle').style.backgroundColor=color;
+    document.getElementById('triangle').style.boxShadow=colorString;
+});
+
+document.getElementById('triangle').addEventListener('mouseout', () => {
+    document.getElementById('triangle').style.backgroundColor='white';
+    document.getElementById('triangle').style.boxShadow='none';
+
+});
+
+document.getElementById('rectangle').addEventListener('mouseenter', () => {
+    var color = '#'+Math.floor(Math.random()*16777215).toString(16);
+    var colorString = '0px 0px 30px 0px ' + color;
+    document.getElementById('rectangle').style.backgroundColor=color;
+    document.getElementById('rectangle').style.boxShadow=colorString;
+});
+
+document.getElementById('rectangle').addEventListener('mouseout', () => {
+    document.getElementById('rectangle').style.backgroundColor='white';
+    document.getElementById('rectangle').style.boxShadow='none';
+});
 
