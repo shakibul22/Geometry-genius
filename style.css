@@ -27,6 +27,16 @@ input{
     background-color: rgba(0,0,0,0.75);
     color: white;
 }
+.area-section{
+    width: 400px;
+}
+.area-section td{
+    padding: 8px;
+    width: 100px;
+}
+hr{
+    border-color: black ;
+}
 
 @media screen and (max-width:688px){
     body{

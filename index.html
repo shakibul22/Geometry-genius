@@ -57,8 +57,8 @@
                             <input type="text" id="triangle-base" class="w-1/3 px-2 bg-slate-200" placeholder="b" > cm
                             <input type="text" id="triangle-height" class="w-1/3 px-2 bg-slate-200" placeholder="h"> cm
                         </div>
-                        <div class="mt-8  btn btn-primary">
-                            <button id="triangle-btn">Calculate</button>
+                        <div class="mt-8  btn btn-primary" id="triangle-btn">
+                            <button >Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -71,15 +71,15 @@
                     </figure>
                     <div class="card-body text-center">
                         <div>
-                            <h2 class="font-bold text-2xl">Rectangle</h2>
+                            <h2 class="font-bold text-2xl" id="rectangle-name">Rectangle</h2>
                             <h5 class="text-xl
                         mb-3">Area(A): <span> w*l</span> </h5>
                         </div>
                         <div>
-                            <input type="text" class="w-1/3 px-2 bg-slate-200 border-2" placeholder="w"> cm
-                            <input type="text" class="w-1/3 bg-slate-200 border-2  px-2" placeholder="l"> cm
+                            <input type="text" class="w-1/3 px-2 bg-slate-200 border-2" id="rectangle-width" placeholder="w"> cm
+                            <input type="text" class="w-1/3 bg-slate-200 border-2  px-2" id="rectangle-length" placeholder="l"> cm
                         </div>
-                        <div class="mt-8  btn btn-primary">
+                        <div class="mt-8  btn btn-primary "  id="rectangle-btn">
                             <button>Calculate</button>
                         </div>
                     </div>
@@ -93,15 +93,15 @@
                     </figure>
                     <div class="card-body text-center">
                         <div>
-                            <h2 class="font-bold text-2xl">Parallelogram</h2>
+                            <h2 class="font-bold text-2xl" id="parallelogram-name">Parallelogram</h2>
                             <h5 class="text-xl
                         mb-3">Area(A): 0.5*b*h </h5>
                         </div>
                         <div>
-                            <input type="text" class="w-1/3 px-2 bg-slate-200" placeholder="b"> cm
-                            <input type="text" class="w-1/3 px-2 bg-slate-200" placeholder="h"> cm
+                            <input type="text" class="w-1/3 px-2 bg-slate-200" id="parallelogram-base" placeholder="b"> cm
+                            <input type="text" class="w-1/3 px-2 bg-slate-200" id="parallelogram-height" placeholder="h"> cm
                         </div>
-                        <div class="mt-8  btn btn-primary">
+                        <div class="mt-8  btn btn-primary" id="parallelogram-btn">
                             <button>Calculate</button>
                         </div>
                     </div>
@@ -115,15 +115,15 @@
                     </figure>
                     <div class="card-body text-center">
                         <div>
-                            <h2 class="font-bold text-2xl">Rhombus</h2>
+                            <h2 class="font-bold text-2xl" id="rhombus-name">Rhombus</h2>
                             <h5 class="text-xl
                         mb-3">Area(A): <span>0.5*d1*d2</span> </h5>
                         </div>
                         <div>
-                            <input type="text" class="w-1/3 px-2 bg-slate-200" placeholder="d1"> cm
-                            <input type="text" class="w-1/3 px-2 bg-slate-200" placeholder="d2"> cm
+                            <input type="text" class="w-1/3 px-2 bg-slate-200" id="rhombus-diagonal-1" placeholder="d1"> cm
+                            <input type="text" class="w-1/3 px-2 bg-slate-200" id="rhombus-diagonal-2" placeholder="d2"> cm
                         </div>
-                        <div class="mt-8  btn btn-primary">
+                        <div class="mt-8  btn btn-primary" id="rhombus-btn">
                             <button>Calculate</button>
                         </div>
                     </div>
@@ -137,15 +137,15 @@
                     </figure>
                     <div class="card-body text-center">
                         <div>
-                            <h2 class="font-bold text-2xl">Pentagon</h2>
+                            <h2 class="font-bold text-2xl" id="pentagon-name">Pentagon</h2>
                             <h5 class="text-xl
                         mb-3">Area(A): 0.5*p*b </h5>
                         </div>
                         <div>
-                            <input type="text" class="w-1/3 px-2 bg-slate-200" placeholder="p"> cm
-                            <input type="text" class="w-1/3 px-2 bg-slate-200" placeholder="b"> cm
+                            <input type="text" class="w-1/3 px-2 bg-slate-200" id="pentagon-p" placeholder="p"> cm
+                            <input type="text" class="w-1/3 px-2 bg-slate-200" id="pentagon-base" placeholder="b"> cm
                         </div>
-                        <div class="mt-8  btn btn-primary">
+                        <div class="mt-8  btn btn-primary" id="pentagon-btn">
                             <button>Calculate</button>
                         </div>
                     </div>
@@ -160,15 +160,15 @@
                     </figure>
                     <div class="card-body text-center">
                         <div>
-                            <h2 class="font-bold text-2xl">Ellipse</h2>
+                            <h2 class="font-bold text-2xl" id="ellipse-name">Ellipse</h2>
                             <h5 class="text-xl
-                        mb-3">Area(A): <span>3.1416*b*h</span> </h5>
+                        mb-3">Area(A): <span>*b*h</span> </h5>
                         </div>
                         <div>
-                            <input type="text" class="w-1/3 px-2 bg-slate-200" placeholder="a"> cm
-                            <input type="text" class="w-1/3 px-2 bg-slate-200" placeholder="b"> cm
+                            <input type="text" class="w-1/3 px-2 bg-slate-200" id="ellipse-a" placeholder="a"> cm
+                            <input type="text" class="w-1/3 px-2 bg-slate-200" id="ellipse-b" placeholder="b"> cm
                         </div>
-                        <div class="mt-8  btn btn-primary">
+                        <div class="mt-8  btn btn-primary" id="ellipse-btn">
                             <button>Calculate</button>
                         </div>
                     </div>
@@ -176,11 +176,11 @@
             </div>
 
             <!-- Area Calculation -->
-            <div class="area-section" id="area">
+            <div class="area-section" >
                 <div class="card w-full bg-base-200 shadow-xl">
-                    <div class="card-body text-center">
+                    <div class="card-body text-center" id="area">
                         <h2> Area Calculation</h2>
-                       
+                       <hr>
                     </div>
                 </div>
             </div>
@@ -193,25 +193,26 @@
                 <!-- 1st question -->
                 <div class="question">
                     <h2>What is Dom and what is the purpose of DOM?</h2>
-                    <p>lorem1000</p>
+                    <p>DOM stands for Document Object Model which is also a cross-platform interface that represents an HTML document as a tree structure.Moreover, any programming language can use DOM to modify web pages.  </p>
                 </div>
                 
                 <!-- 2nd  question -->
                 <div class="question">
                     <h2>How will you select HTML elements using DOM?</h2>
-                    <p></p>
+                    <p>When we will use DOM to select HTML elements,we can follow 5 ways to select HTML elements. Such as,<br>1.getElementsByTagName() <br>
+                        2.getElementsByClassName() <br>3. getElementById() <br>4.querySelector() <br>5.querySelectorAll()</p>       
                 </div>
                 
                 <!-- 3rd  question -->
                 <div class="question">
                     <h2>What is event bubble?</h2>
-                    <p></p>
+                    <p> Event bubbling is a process that starts with the element that arouses the event and bubbles up the containing elements in order. The main thing of the event bubbling is, when an event happens on another element, it first runs on the handlers and then on its parent element.</p>
                 </div>
                 
                 <!-- 4th question -->
                 <div class="question">
                     <h2>What is a callback function and why will you use it?</h2>
-                    <p></p>
+                    <p> A callback function is function that passed into another function as a parameter.Which can also return into another function. we use it in Javascript.By mapping or filtering functions that call your callback for every element in an array, list, or other container</p>
                 </div>
             </div>
       
