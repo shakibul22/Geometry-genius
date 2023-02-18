@@ -72,10 +72,10 @@ function displayData(nameOfShape, area) {
     tr.innerHTML = `
       <td>${serial}</td>
       <td>${nameOfShape}</td>
-      <td>${area} cm <sup>2</sup></sup></td>
+      <td>${area} cm<sup>2</sup></td>
       
       <td>
-      <button class="btn btn-sm btn-red-500 ">X</button>
+      <button class="btn btn-sm bg-orange-700 ">X</button>
       </td>
       
     `;
