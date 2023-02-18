@@ -10,6 +10,7 @@ document.getElementById('header-icon').addEventListener('click', ()=>{
 
 })
 
+
 document.getElementById('ellipse-btn').addEventListener('click', () => {
     serial+=1;
     const sd = getData('ellipse-name','ellipsee-base','ellipse-height')
@@ -57,6 +58,7 @@ document.getElementById('rectangle-btn').addEventListener('click', () => {
     
 })
 document.getElementById('triangle-btn').addEventListener('click', () => {
+    
     serial+=1;
     const sd = getData('triangle-name','triangle-base','triangle-height')
     const area= 0.5*sd.firstInputValue*sd.secondInputValue;
